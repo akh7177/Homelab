@@ -1,0 +1,43 @@
+# For configuration options and examples, please see:
+# https://gethomepage.dev/configs/settings/
+title: Homelab Dashboard
+background:
+  image: images/homepage.png
+  brightness: 50
+  opacity: 25
+
+providers:
+  openweathermap: openweathermapapikey
+  weatherapi: weatherapiapikey
+
+layout:
+  Glances:
+    style: row
+    columns: 3
+    header: false
+
+  Homelab:
+    header: false
+
+  Media-Servers:
+    style: row
+    columns: 3
+    header: false
+
+  Network:
+    style: row
+    columns: 2
+    header: false
+
+  Torrents:
+    header: false
+
+  Nextainer:
+    style: row
+    columns: 2
+    header: false
+
+  Media-Viewer:
+    style: row
+    columns: 2
+    header: false

@@ -1,0 +1,145 @@
+# For configuration options and examples, please see:
+# https://gethomepage.dev/configs/services/
+
+- Homelab:
+    - Proxmox:
+        icon: proxmox.png
+        href: https://yourdomainame.com
+        ping: yourdomain.com
+        widget:
+          type: proxmox
+          url: https://yourdomainame.com
+          username: <proxmox_usrname>
+          password: <proxmox_api_key>
+          node: royalfox
+          fields: ["vms", "lxc"]
+
+- Media-Servers:
+    - Sonarr:
+        icon: sonarr.png
+        href: https://yoursonarrdomain.com
+        ping: yoursonarrdomain.com
+        widget:
+          type: sonarr
+          url: https://yoursonarrdomain.com
+          key: <sonarr_api_key>
+
+    - Radarr:
+        icon: radarr.png
+        href: https://youradarrdomain.com
+        ping: youradarrdomain.com
+        widget:
+          type: radarr
+          url: https://youradarrdomain.com
+          key: <radarr_api_key>
+
+    - Prowlarr:
+        icon: prowlarr.png
+        href: https://yourprowlarrdomain.com
+        ping: yourprowlarrdomain.com
+        widget:
+          type: prowlarr
+          url: https://yourprowlarrdomain.com
+          key: <prowlarr_api_key>
+
+- Media-Viewer:
+    - Jellyfin:
+        icon: jellyfin.png
+        href: https://yourjellyfindomain.com
+        ping: yourjellyfindomain.com
+        widget:
+          type: jellyfin
+          url: https://yourjellyfindomain.com
+          key: <jellyfin_api_key>
+          enableBlocks: true # optional, defaults to false
+          enableNowPlaying: true # optional, defaults to true
+          enableUser: true # optional, defaults to false
+          showEpisodeNumber: true # optional, defaults to false
+          expandOneStreamToTwoRows: false # optional, defaults to true
+
+    - Immich:
+        icon: immich.png
+        href: https://yourimmichdomain.com
+        ping: yourimmichdomain.com
+        widget:
+          type: immich
+          url: https://yourimmichdomain.com
+          key: <immich_api_key>
+          version: 2 # optional, default is 1
+
+- Network:
+    - 'Nginx Proxy Manager':
+        icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/nginx-proxy-manager.png
+        href: https://yournginxdomain.com
+        ping: yournginxdomain.com
+        widget:
+          type: npm
+          url: https://yournginxdomain.com
+          username: <npm_login_email>
+          password: <npm_login_password>
+
+    - Pihole:
+        icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/pi-hole.png
+        href: https://yourpiholedomain.com
+        ping: yourpiholedomain.com
+        widget:
+          type: pihole
+          url: https://yourpiholedomain.com
+          version: 6 # required if running v6 or higher, defaults to 5
+          key: <pihole_api_key>  #optional, in v6 can be your password or app password
+
+- Torrents:
+    - Qbittorrent:
+        icon: qbittorrent.png
+        href: https://yourqbitorrentdomain.com
+        ping: yourqbitorrentdomain.com
+        widget:
+          type: qbittorrent
+          url: http://<qbitorrent_ip>:<port> # Domain didn't work for me, not sure why
+          username:  <qbitorrent_username>
+          password: <qbitorrent_password>
+          enableLeechProgress: true
+
+- Nextainer:
+    - Portainer:
+        icon: portainer.png
+        href: https://yourportainerdomain.com
+        ping: yourportainerdomain.com
+        widget:
+          type: portainer
+          url:  http://<portainer_ip>:<port> # Domain didn't work for me, not sure why
+          env: 3
+          key: ptr_rz+/Pns2ddIIYiX84oJAgT5TRLLGSYTwCscNMHDj4Gw=
+
+    - Nextcloud:
+        icon: nextcloud.png
+        href: https://yournextclouddomain.com
+        ping: yournextclouddomain.com
+        widget:
+          type: nextcloud
+          url: https://yournextclouddomain.com
+          username: <nextcloud_username>
+          password: <nextcloud_api_key>
+          fields: ["activeusers", "numfiles", "numshares"]
+
+- Glances:
+    -  'CPU Usage':
+        widget:
+          type: glances
+          url: http://<yourpvehostip>:<port> # generally port 61208
+          metric: cpu
+          version: 4
+
+    - 'GPU Usage':
+        widget:
+          type: glances
+          url: http://<gpuvm_ip>:<port> # I've passed gpu to an ubuntu server vm in PVE and I'm referencing it here
+          metric: gpu:nvidia0 # The GPU ID shown in glances
+          version: 4
+
+    - 'Network':
+        widget:
+          type: glances
+          url: http://<yourpvehostip>:<port>
+          metric: network:enp7s0 # The required interface name as shown in glances
+          version: 4

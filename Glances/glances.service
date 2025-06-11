@@ -1,0 +1,13 @@
+[Unit]
+Description=Glances service for system monitoring
+After=network.target
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=<ur_username>
+ExecStart=/home/<ur_username>/.local/bin/glances -w
+
+[Install]
+WantedBy=multi-user.target
