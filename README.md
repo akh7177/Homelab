@@ -6,7 +6,7 @@ I've distilled my month long efforts into this repo, I hope to help fellow homel
 
 So here's an overview of the services that's running on my home-server right now 👇  
 
-<center><img src="./images/Homelab.png" alt="Alt Text" style="width:90%; height:auto;"></center>  
+<center><img src="./images/Homelab.png" alt="Alt Text" style="width:100%; height:auto;"></center>  
 
 
 - The ones that don't have VMs specifically mentioned are running on LXC Containers.
@@ -15,7 +15,7 @@ So here's an overview of the services that's running on my home-server right now
 
 Here's another diagram to give you an overview of the **Storage architecture and Tailscale**
 
-<center><img src="./images/Architechture.png" alt="Alt Text" style="width:90%; height:auto;"></center>
+<center><img src="./images/Architechture.png" alt="Alt Text" style="width:100%; height:auto;"></center>
 
 
 

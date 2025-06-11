@@ -28,7 +28,7 @@ Nextcloud provides an amazing GUI for managing your files remotely and here's ho
 That's it! Your are good to go :)
 
 
-*(Setup [tailscale](../Tailscale/Readme.md) in Docker LXC and map the nextcloud to a custom domain using [NPM](../Nginx_Proxy_Manager/Readme.md) for improving QoL)*
+*(Setup [tailscale](../Tailscale/Readme.md) in Docker LXC and map the nextcloud to a custom domain using [NPM](../Nginx_Proxy_Manager/Readme.md) for improving QoL)*  
 *(Now setup 2FA and try downloading mobile app and configuring that too, its ez dw)*
 
 

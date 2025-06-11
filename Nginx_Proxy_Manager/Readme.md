@@ -6,7 +6,7 @@ Once again, a huge shoutout to tteck and Proxmox VE Helper Scripts Community for
 
 **Step 1** : Start off by running the installation command present over [here](https://community-scripts.github.io/ProxmoxVE/scripts?id=nginxproxymanager) in you Proxmox Host Shell and proceed with the default installation. 
 
-**Step 1.1** : Install Tailscale in the LXC as explained here
+**Step 1.1** : Install Tailscale in the LXC as explained [here](../Tailscale/Readme.md)
 
 **Step 2** : Navigate to http://<lxc_ip>:81 and login using the default credentials (mentioned in the Proxmox VE Helper scripts page) 
 

@@ -1,6 +1,6 @@
 # Aesthetic Homelab Dashboard setup and config
 
-<center><img src="../images/Dashboard.png" alt="Dashboard" style="width:80%; height:auto;"></center>
+<center><img src="../images/Dashboard.png" alt="Dashboard" style="width:100%; height:auto;"></center>
 
 Navigate to the Docker LXC (checkout [docker_portainer](../Docker_Portainer/Readme.md) incase you don't have a Docker LXC) and as a good practice create 2 folders for bind mounts,
 
@@ -13,7 +13,7 @@ Next, in portainer with
 - map port 3000 to 3000 and
 - Configure volumes as below 👇
 
-<center><img src="../images/dashboard_volume_config.png" alt="Dashboard_volume_config" style="width:70%; height:auto;"></center>
+<center><img src="../images/dashboard_volume_config.png" alt="Dashboard_volume_config" style="width:80%; height:auto;"></center>
 
 (The last mount is of my external hard drive that I’ve passed to monitor it)
 

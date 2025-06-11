@@ -5,10 +5,14 @@
 - Here is it's compose file  :)  
 - Once it has been deployed, add the root folder through Settings --> Media Management (check below in config) in both sonarr and radarr
 
+Here is how it's gonna look after the configuration!
+
 <center><img src="../images/sonarr.png" alt="Alt Text" style="width:80%; height:auto;"></center>
-<center><img src="../images/radarr.png" alt="Alt Text" style="width:80%; height:auto;"></center>
+<center><img src="../images/Radarr.png" alt="Alt Text" style="width:80%; height:auto;"></center>
 <center><img src="../images/prowlarr.png" alt="Alt Text" style="width:80%; height:auto;"></center>  
 
+
+And this is the stack that you r gonna be deploying
 
 ```yaml
 

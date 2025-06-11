@@ -24,5 +24,5 @@ pipx install 'glances[all]'
 - Place it in /etc/systemd/system cus that's where custom unit files are placed.
 - Perform a daemon reload with `systemctl daemon-reload`
 - Start the service with `systemctl start glances`
-- Enable it to start the service automatically upon boot ``systemctl enable glances`
+- Enable it to start the service automatically upon boot `systemctl enable glances`
 

@@ -1,6 +1,9 @@
 # Immich installation and setup
 
-*(If you haven't looked upon setting up Ubuntu Server VM and doing a GPU passtrhough to it have a look over [here](../Jellyfin/Readme.md) and then return as we'll be using the same VM as well as the GPU)*
+*(If you haven't looked upon setting up Ubuntu Server VM and doing a GPU passtrhough to it have a look over [here](../Jellyfin/Readme.md) and then return as we'll be using the same VM as well as the GPU)*  
+
+
+<center><img src="../images/immich.png" alt="Immich" style="width:80%; height:auto;"></center>
 
 **Step 1** : Install docker on to the Ubuntu Server VM by following *[this]*(https://docs.docker.com/engine/install/ubuntu/#install-using-the-convenience-script) official installation guide
 
@@ -20,6 +23,8 @@ wget -O hwaccel.ml.yml https://github.com/immich-app/immich/releases/latest/down
 ```
 **Step 4**: Checkout the compose file that I've uploaded above to make changes in ur respecitive system to match ur requirements and once u've configured the compose and .env files, deploy the containers with *docker compose up -d*
 
-That's it! The Immich Server will be running and accessible at http://<Ubuntu_Server_VM_IP>:2283!
+That's it! The Immich Server will be running and the media will be accessible at http://<Ubuntu_Server_VM_IP>:2283!  
+
+*(For configuring Immich server related stuff, navigate to /admin in the URL)*  
 
 *(Setup [tailscale](../Tailscale/Readme.md) and map the service to a custom domain using [NPM](../Nginx_Proxy_Manager/Readme.md) for improving QoL)*

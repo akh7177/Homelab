@@ -1,10 +1,12 @@
 # Jellyfin Installation and Setup on an Ubuntu Server VM
 
-First off, why did I choose to put it separately on a VM rather than having it on an LXC?  
+## First off, why did I choose to put it separately on a VM rather than having it on an LXC?  
 Cus I wanted to do a GPU passthrough to enable Hardware Encoding for my media essentially letting me play a wide variety of media over all my devices  
 
-Can't I do a GPU Passthrough via LXC?  
+## Can't I do a GPU Passthrough via LXC?  
 Its certainly possible but I also intend to utilize this GPU for Immich. Hence I preferred having all the services that require GPU in a single place  
+
+Here's a quick look on my anime library that's been setup on Jellyfin!
 
 <center><img src="../images/Jellyfin.png" alt="Jellyfin" style="width:80%; height:auto;"></center>
 
